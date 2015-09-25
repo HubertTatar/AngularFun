@@ -1,0 +1,62 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'connect' ]
+2 info using npm@2.14.4
+3 info using node@v4.1.1
+4 verbose install initial load of D:\CGI\other\AngularFun\package.json
+5 verbose readDependencies loading dependencies from D:\CGI\other\AngularFun\package.json
+6 silly cache add args [ 'connect', null ]
+7 verbose cache add spec connect
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'connect',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'connect',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 silly addNamed connect@*
+10 verbose addNamed "*" is a valid semver range for connect
+11 silly addNameRange { name: 'connect', range: '*', hasData: false }
+12 silly mapToRegistry name connect
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/connect
+16 verbose addNameRange registry:https://registry.npmjs.org/connect not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/connect
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 08:56:03
+20 verbose request id 85f2f2281df32bf5
+21 http request GET https://registry.npmjs.org/connect
+22 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND 8080 8080:80
+23 info attempt registry request try #2 at 08:56:16
+24 http request GET https://registry.npmjs.org/connect
+25 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND 8080 8080:80
+26 info attempt registry request try #3 at 08:57:18
+27 http request GET https://registry.npmjs.org/connect
+28 verbose stack Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND 8080 8080:80
+28 verbose stack     at ClientRequest.onError (C:\Program Files\nodejs\node_modules\npm\node_modules\request\node_modules\tunnel-agent\index.js:174:17)
+28 verbose stack     at ClientRequest.g (events.js:260:16)
+28 verbose stack     at emitOne (events.js:77:13)
+28 verbose stack     at ClientRequest.emit (events.js:169:7)
+28 verbose stack     at Socket.socketErrorListener (_http_client.js:259:9)
+28 verbose stack     at emitOne (events.js:77:13)
+28 verbose stack     at Socket.emit (events.js:169:7)
+28 verbose stack     at connectErrorNT (net.js:993:8)
+28 verbose stack     at doNTCallback2 (node.js:429:9)
+28 verbose stack     at process._tickCallback (node.js:343:17)
+29 verbose cwd D:\CGI\other\AngularFun
+30 error Windows_NT 6.1.7601
+31 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "connect"
+32 error node v4.1.1
+33 error npm  v2.14.4
+34 error code ECONNRESET
+35 error network tunneling socket could not be established, cause=getaddrinfo ENOTFOUND 8080 8080:80
+35 error network This is most likely not a problem with npm itself
+35 error network and is related to network connectivity.
+35 error network In most cases you are behind a proxy or have bad network settings.
+35 error network
+35 error network If you are behind a proxy, please make sure that the
+35 error network 'proxy' config is set properly.  See: 'npm help config'
+36 verbose exit [ 1, true ]

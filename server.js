@@ -3,7 +3,7 @@ var connect = require('connect'),
 
 var app = connect();
 
-app.use(serveStatic("/home/huta/Documents/angular/webfolder/project"));
+app.use(serveStatic("D:/CGI/other/AngularFun"));
 app.listen(5000);
 
 
